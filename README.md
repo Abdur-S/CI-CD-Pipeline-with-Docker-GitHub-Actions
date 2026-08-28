@@ -2,6 +2,8 @@
 
 A minimal Flask app with a full CI/CD pipeline: every push runs automated tests, builds a Docker image, and pushes it to Docker Hub using GitHub Actions.
 
+> "Built and deployed a containerized Flask application with an automated CI/CD pipeline using GitHub Actions — automated testing, Docker image builds, and registry push on every commit."
+
 ## What this project demonstrates
 - Containerizing an application with Docker
 - Automated testing in CI
@@ -63,11 +65,3 @@ docker run -p 5000:5000 cicd-demo-app
    - `DOCKERHUB_USERNAME` = your Docker Hub username
    - `DOCKERHUB_TOKEN` = a Docker Hub access token (Docker Hub → Account Settings → Security → New Access Token)
 5. Push a small change — go to the **Actions** tab on GitHub and watch the pipeline run automatically (test → build → push).
-
-## What to put on your resume
-> "Built and deployed a containerized Flask application with an automated CI/CD pipeline using GitHub Actions — automated testing, Docker image builds, and registry push on every commit."
-
-## Possible extensions (if you have extra time later)
-- Deploy the image automatically to AWS ECS / Render / Railway free tier.
-- Add code coverage reporting and a status badge to the README.
-- Add linting (flake8/black) as a pipeline stage.
